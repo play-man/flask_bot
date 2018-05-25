@@ -3,12 +3,12 @@ import os
 from flask import Flask, request
 
 EXTERNAL_FOLDER = os.path.dirname(os.path.dirname(__file__))
-TOKEN = '519955729:AAGIJYECdFK4hmPAqwcg00iJs2V5cO9ePV8'
-HOST     = '' # Same FQDN used when generating SSL Cert
+TOKEN = 'your_token'
+HOST     = ''
 PORT     = 8443
 CERT     = os.path.join(EXTERNAL_FOLDER, 'server.crt')
 CERT_KEY = os.path.join(EXTERNAL_FOLDER, 'server.key')
-URL = 'playman31.pythonanywhere.com'
+URL = 'url'
 
 
 bot = telebot.TeleBot(TOKEN)
